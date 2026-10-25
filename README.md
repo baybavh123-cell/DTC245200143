@@ -54,7 +54,7 @@ Hệ thống bao gồm **10 container** được tổ chức thành 3 lớp dị
 
 | Lớp dịch vụ | Dịch vụ (Container) | Cổng công bố | Chức năng & Mô tả |
 | :--- | :--- | :--- | :--- |
-| **Web & CSDL** | `nginx-proxy` | `80` / `8443` | Reverse Proxy, tiếp nhận yêu cầu HTTP/HTTPS và điều hướng tới WordPress. |
+| **Web & CSDL** | `nginx-proxy` | `80` | Reverse Proxy, tiếp nhận yêu cầu HTTP/HTTPS và điều hướng tới WordPress. |
 | **Web & CSDL** | `wordpress-app` | `8080` | Ứng dụng WordPress (PHP 8.2 / Apache) phục vụ website. |
 | **Web & CSDL** | `mysql-db` | *Ẩn (Nội bộ)* | Cơ sở dữ liệu MySQL 8.0, chỉ truy cập qua mạng nội bộ `app-network`. |
 | **Web & CSDL** | `phpmyadmin` | `8081` | Giao diện quản trị cơ sở dữ liệu MySQL qua trình duyệt. |
