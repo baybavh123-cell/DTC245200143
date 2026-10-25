@@ -47,6 +47,20 @@ services:
     networks:
       - app-network
 
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: RootPassword123!
+    networks:
+      - app-network
+    depends_on:
+      - db
+
   # === 2. LAYER MONITORING ===
   prometheus:
     image: prom/prometheus:latest
