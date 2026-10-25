@@ -142,7 +142,6 @@ docker compose ps
 | Dịch vụ | Địa chỉ | Ghi chú |
 | :--- | :--- | :--- |
 | Website chính (HTTP) | http://localhost | Cổng 80 (Chuyển hướng sang HTTPS) |
-| Website bảo mật (HTTPS) | https://localhost:8443 | Cổng bảo mật SSL |
 | WordPress (Trực tiếp) | http://localhost:8080 | Cổng nội bộ ứng dụng |
 | Quản trị CSDL phpMyAdmin | http://localhost:8081 | Quản trị CSDL MySQL |
 | Prometheus Dashboard | http://localhost:9090 | Mục Status -> Targets |
